@@ -1,0 +1,103 @@
+/* ===== HELPER COLORS ===== */
+
+/* ===== BASIC STYLES AND TYPOGRAPHY ===== */
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ user-select: none;
+ text-align: center;
+}
+
+body {
+ margin: 0;
+ background-color: #333;
+ position: relative;
+}
+
+@font-face {
+ font-family: "leagueSpartan";
+ src: url("./fonts/league-spartan/LeagueSpartan-Bold.otf");
+}
+
+@font-face {
+ font-family: "zeroZero";
+ src: url("./fonts/Zero-Zero-Is/zero_and_zero_is.ttf");
+}
+
+/* ===== LAYOUT STYLES ===== */
+
+/* General positioning */
+
+.wrapper {
+ width: 100vw;
+ height: 100vh;
+}
+
+.wrapper, .header, h1, .container, .box, .counter, button {
+  position: absolute;
+  color: #E6F4F1;
+}
+
+.header, h1, .container {
+  width: 100vw;
+}
+
+/* Header Styles */
+
+.header {
+  height: 30%;
+}
+
+h1 {
+  top: 10%;
+  font-size: 10vh;
+  font-family: zeroZero;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+/* Container Styles */
+
+.container {
+  top: 30%;
+  height: 50%;
+}
+
+.box {
+  width: 20%;
+  height: 25vh;
+  top: 20%;
+}
+
+#box1 {
+  left: 20%;
+}
+
+#box2 {
+  left: 60%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  font-family: leagueSpartan;
+  padding: 0.25rem;
+}
+
+.counter {
+  left: 0;
+  right: 0;
+  height: 75%;
+  background-color: #007296;
+  border-radius: 0.25rem;
+  font-size: 15vh;
+  font-family: sans-serif;
+}
+
+.counter:hover {
+  color: white;
+}
+
+/* ===== MEDIA QUERIES ===== */
